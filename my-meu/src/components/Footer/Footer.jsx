@@ -1,8 +1,8 @@
-import React from "react";
+
 
 function Footer(){
     return(
-        <footer class="rodape">
+        <footer className="rodape">
         <h6>Desenvolvido com amor por Gilberto Soares S2 </h6>
         </footer>
     )
