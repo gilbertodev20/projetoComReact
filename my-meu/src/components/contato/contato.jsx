@@ -6,7 +6,7 @@ function Contato() {
             <section id="secao2">
                 <center id="secao">
                     <form id="form">
-                        <h5>htmlFormulario</h5>
+                        <h5>Formulario</h5>
                         <fieldset>
                             <label htmlFor="input-name">Nome</label>
                             <input type="text" name="input-name" id="input-name" className="inputs required" placeholder="Nome"
