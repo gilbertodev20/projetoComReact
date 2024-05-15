@@ -21,13 +21,11 @@ function Portfolio() {
       title: "portfolio 3",
     }
   ]
-
   return (
     <>
       <div className="container">
-        {portfolio.map((portfolio) =>
-
-          <section className="portfolio">
+        {portfolio.map((portfolio,index) =>
+        <section key={index} className="portfolio" >
             <div id="img1">
               <img className="img" src={avatarGilberto} alt="avatarGilberto" />
               <p>{portfolio.title}</p>
