@@ -3,24 +3,38 @@ import avatarGilberto from "../../assets/WhatsApp Image 2024-04-15 at 18.08.56.j
 import '../Portfolio/portfolio.css'
 
 function Portfolio() {
+
+  const portfolio = [
+    {
+      link: "https://academy.comeialabs.com.br/",
+      image: { avatarGilberto },
+      title: "portfolio 1",
+    },
+    {
+      link: "https://academy.comeialabs.com.br/",
+      image: { avatarGilberto },
+      title: "portfolio 2",
+    },
+    {
+      link: "https://academy.comeialabs.com.br/",
+      image: { avatarGilberto },
+      title: "portfolio 3",
+    }
+  ]
+
   return (
     <>
-      <section className="portfolio">
-        <div id="container">
-          <div id="img1">
-            <img className="img" src={avatarGilberto} alt="avatarGilberto" />
-            <p>Descrição desse item é portfólio!</p>
-          </div>
-          <div id="img2">
-            <img className="img" src={avatarGilberto} alt="avatarGilberto" />
-            <p>Descrição desse item é portfólio!</p>
-          </div>
-          <div id="img3">
-            <img className="img" src={avatarGilberto} alt="avatarGilberto" />
-            <p>Descrição desse item é portfólio!</p>
-          </div>
-        </div>
-      </section>
+      <div className="container">
+        {portfolio.map((portfolio) =>
+
+          <section className="portfolio">
+            <div id="img1">
+              <img className="img" src={avatarGilberto} alt="avatarGilberto" />
+              <p>{portfolio.title}</p>
+            </div>
+          </section>
+        )}
+      </div>
     </>
   )
 }

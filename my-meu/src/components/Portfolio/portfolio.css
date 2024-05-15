@@ -1,10 +1,10 @@
 .portfolio{
-    height: 100%;
     margin-top: 80px;
     justify-content: center;
     display: flex;
-    width: 100vw;
-    display: inline-block;
+    text-align: center;
+    flex-direction:row;
+    justify-content: space-around;
 }
 
 #img1{
@@ -13,24 +13,12 @@
     width: 250px;
     height: 300px;
 }
-#img2{
-    background-color:#1c1942;
-    width: 250px;
-    height: 300px;
-}
-#img3{
-    background-color: #1c1942;
-    width: 250px;
-    height: 300px;
-}
-#container{
-    display: flex;
-    text-align: center;
-    flex-direction:row;
-    justify-content: space-around;
-    width: 100%;
-    
-    
+.container{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+padding-bottom: 30px;
+justify-content: space-around;
 }
 p{
     color: #beb4b4;

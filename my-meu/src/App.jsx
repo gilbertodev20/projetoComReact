@@ -18,14 +18,13 @@ function App() {
         <Header></Header>
         <nav>
 
-          <Link className='button' to="/Curriculo">Curriculo</Link>
+          <Link className='button' to="/">Curriculo</Link>
           <Link className='button' to="/Portfolio">Portfolio</Link>
           <Link className='button' to="/Contato">Contato</Link>
 
         </nav>
-
         <Routes>
-          <Route path="Curriculo" element={<Curriculo />} />
+          <Route index element={<Curriculo />} />
           <Route path="Portfolio" element={<Portfolio />} />
           <Route path="Contato" element={<Contato />} />
         </Routes>
