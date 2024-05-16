@@ -7,17 +7,17 @@ function Portfolio() {
   const portfolio = [
     {
       link: "https://academy.comeialabs.com.br/",
-      image: { avatarGilberto },
+      image: "https://i.ibb.co/g459njj/Whats-App-Image-2024-04-15-at-18-08-56.jpg" ,
       title: "portfolio 1",
     },
     {
       link: "https://academy.comeialabs.com.br/",
-      image: { avatarGilberto },
+      image: "https://i.ibb.co/g459njj/Whats-App-Image-2024-04-15-at-18-08-56.jpg" ,
       title: "portfolio 2",
     },
     {
       link: "https://academy.comeialabs.com.br/",
-      image: { avatarGilberto },
+      image:  "https://i.ibb.co/g459njj/Whats-App-Image-2024-04-15-at-18-08-56.jpg" ,
       title: "portfolio 3",
     }
   ]
