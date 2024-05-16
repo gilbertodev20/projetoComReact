@@ -21,20 +21,21 @@ function Portfolio() {
       title: "portfolio 3",
     }
   ]
-
+  
   return (
-    <>
+
       <div className="container">
         {portfolio.map((portfolio) =>
        <ItemPortfolio
        link={portfolio.link}
        image={portfolio.image}
        title={portfolio.title}
-
        ></ItemPortfolio>
         )}
+
       </div>
-    </>
-  )
+  
+    )
+
 }
 export default Portfolio
