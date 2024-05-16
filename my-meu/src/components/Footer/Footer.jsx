@@ -1,5 +1,5 @@
 
-
+import "../Footer/Footer.css"
 function Footer(){
     return(
         <footer className="rodape">

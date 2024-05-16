@@ -1,7 +1,7 @@
 
 import avatarGilberto from "../../assets/WhatsApp Image 2024-04-15 at 18.08.56.jpeg"
+import ItemPortfolio from "../ItemPortfolio/ItemPortfolio"
 import '../Portfolio/portfolio.css'
-
 function Portfolio() {
 
   const portfolio = [
@@ -26,13 +26,12 @@ function Portfolio() {
     <>
       <div className="container">
         {portfolio.map((portfolio) =>
+       <ItemPortfolio
+       link={portfolio.link}
+       image={portfolio.image}
+       title={portfolio.title}
 
-          <section className="portfolio">
-            <div id="img1">
-              <img className="img" src={avatarGilberto} alt="avatarGilberto" />
-              <p>{portfolio.title}</p>
-            </div>
-          </section>
+       ></ItemPortfolio>
         )}
       </div>
     </>

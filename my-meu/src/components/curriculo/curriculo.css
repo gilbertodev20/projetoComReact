@@ -1,0 +1,37 @@
+.secao2 {
+    margin: 50px;
+    padding: 80px;
+    background-color: #837E7E;
+    border-radius: 30px;
+}
+
+.secao3 {
+    margin: 50px;
+    padding: 80px;
+    background-color: #837E7E;
+    border-radius: 30px;
+}
+
+.secao4 {
+    margin: 50px;
+    padding: 80px;
+    background-color: #837E7E;
+    position: relative;
+    border-radius: 30px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}

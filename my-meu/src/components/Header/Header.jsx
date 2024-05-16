@@ -1,4 +1,4 @@
-
+import "../Header/Header.css"
 import avatarGilberto from "../../assets/WhatsApp Image 2024-04-15 at 18.08.56.jpeg"
 
 function Header(){
