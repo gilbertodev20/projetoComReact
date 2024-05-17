@@ -2,39 +2,24 @@
 import avatarGilberto from "../../assets/WhatsApp Image 2024-04-15 at 18.08.56.jpeg"
 import ItemPortfolio from "../ItemPortfolio/ItemPortfolio"
 import '../Portfolio/portfolio.css'
+import portfolio from "./portfolio.json"
 function Portfolio() {
 
-  const portfolio = [
-    {
-      link: "https://academy.comeialabs.com.br/",
-      image: "https://i.ibb.co/g459njj/Whats-App-Image-2024-04-15-at-18-08-56.jpg" ,
-      title: "portfolio 1",
-    },
-    {
-      link: "https://academy.comeialabs.com.br/",
-      image: "https://i.ibb.co/g459njj/Whats-App-Image-2024-04-15-at-18-08-56.jpg" ,
-      title: "portfolio 2",
-    },
-    {
-      link: "https://academy.comeialabs.com.br/",
-      image:  "https://i.ibb.co/g459njj/Whats-App-Image-2024-04-15-at-18-08-56.jpg" ,
-      title: "portfolio 3",
-    }
-  ]
+ 
   
   return (
 
       <div className="container">
-        {portfolio.map((portfolio) =>
+        {portfolio.map((item,index) =>
        <ItemPortfolio
-       link={portfolio.link}
-       image={portfolio.image}
-       title={portfolio.title}
+       key={index}
+       link={item.link}
+       image={item.image + (index + 1)}
+       title={item.title + (index + 1)}
        ></ItemPortfolio>
         )}
 
       </div>
-  
     )
 
 }
