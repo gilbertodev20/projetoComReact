@@ -22,16 +22,22 @@
 
 p {
     margin-top: 10px;
+    justify-content: space-around;
 }
 
 h4 {
     font-size: 20px;
+    justify-content: space-around;
 }
+
 
 h5 {
     font-size: 20px;
+    justify-content: space-around;
+
 }
 
 h2 {
     font-size: 20px;
+    justify-content: space-around;
 }

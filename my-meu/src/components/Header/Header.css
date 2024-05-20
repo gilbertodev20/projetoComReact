@@ -4,7 +4,6 @@ header {
     justify-content: center;
     place-items: center;
     height: 250px;
-    animation: 5s ease alternate infinite;
     background: linear-gradient(90deg, rgba(159, 170, 196, 1) 0%, rgba(31, 30, 47, 1) 100%);
     animation: alternate;
     border: solid 1px;
@@ -29,5 +28,4 @@ h3 {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: 2s alternate infinite;
 }

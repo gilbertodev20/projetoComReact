@@ -1,6 +1,5 @@
 import "./ItemPortfolio.css"
-
-
+ 
 function ItemPortfolio(props){
     return(
         <section className="portfolio">

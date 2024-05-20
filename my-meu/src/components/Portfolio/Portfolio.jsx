@@ -1,5 +1,4 @@
 
-import avatarGilberto from "../../assets/WhatsApp Image 2024-04-15 at 18.08.56.jpeg"
 import ItemPortfolio from "../ItemPortfolio/ItemPortfolio"
 import '../Portfolio/portfolio.css'
 import portfolio from "./portfolio.json"
