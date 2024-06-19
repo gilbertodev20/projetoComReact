@@ -1,7 +1,15 @@
-
 import "../curriculo/curriculo.css"
 import date from "./curriculo.json"
-function Curriculo() {
+
+
+
+function Curriculo(props) {
+
+ const {resumo, experienciaAcademica, experienciasProfissionais} = props.curriculo
+
+if(!resumo || !experienciaAcademica || !experienciasProfissionais) {
+    return <p>Carregando...</p>
+}
     return (
         <>
             <section className="secao2">

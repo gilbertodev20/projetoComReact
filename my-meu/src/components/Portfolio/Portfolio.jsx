@@ -2,7 +2,7 @@
 import ItemPortfolio from "../ItemPortfolio/ItemPortfolio"
 import '../Portfolio/portfolio.css'
 import portfolio from "./portfolio.json"
-function Portfolio() {
+function Portfolio({portfolio}) {
 
  
   
@@ -13,8 +13,8 @@ function Portfolio() {
        <ItemPortfolio
        key={index}
        link={item.link}
-       image={item.image + (index + 1)}
-       title={item.title + (index + 1)}
+       image={item.image}
+       title={item.title}
        ></ItemPortfolio>
         )}
 
