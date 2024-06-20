@@ -8,6 +8,7 @@ function Header(props){
         nome: "",
         foto: "",
         cargo: "",
+        
     })
 
     useEffect(() => {
@@ -21,6 +22,7 @@ function Header(props){
                 nome: data[0].nome,
                 cargo: data[0].cargo,
                 foto: data[0].foto
+                
             })
         }
         carregarDados()
