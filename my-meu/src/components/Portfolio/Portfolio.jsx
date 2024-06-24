@@ -1,7 +1,7 @@
 
 import ItemPortfolio from "../ItemPortfolio/ItemPortfolio"
 import '../Portfolio/portfolio.css'
-import portfolio from "./portfolio.json"
+import  "./portfolio.json"
 function Portfolio({portfolio}) {
 
  

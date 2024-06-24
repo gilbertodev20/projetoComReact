@@ -4,6 +4,7 @@ import api from './api'
 
 import './App.css'
 
+
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
@@ -14,28 +15,31 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom"
 import BarraDeNavegacao from './components/barraDeNavegacao/barraDeNavegacao'
 
 
+
 function App() {
   const [informacoes, setInformacoes] = React.useState({});
   const [curriculo, setCurriculo] = React.useState({});
   const [portfolio, setPortfolio] = React.useState([]);
-
+console.log(informacoes)
+  console.log(curriculo)
   const fetchDados = async () => {
     try {
-      const informacoes = await api.get(`/informacoes/1`);
+      const informacao = await api.get(`/informacoes/1`);
       setInformacoes({
-        foto: informacoes.date.foto,
-        nome: informacoes.date.nome,
-        cargo: informacoes.date.cargo,
+        foto: informacao.data.foto,
+        nome: informacao.data.nome,
+        cargo: informacao.data.cargo,
       })
+
       const experienciaAcademica = await api.get(`/experiencias?tipo=academico`)
-      const experienciasProfissionais = await api.get(`/experiencias?dominio=profissional`)
+      const experienciaProfissional = await api.get(`/experiencias?tipo=profissional`)
 
       setCurriculo({
-        resumo: informacoes.date.resumo,
-        experienciaAcademica: experienciaAcademica.date,
-        experienciasProfissionais: experienciasProfissionais.date
+        resumo: informacao.data.resumo,
+        experienciaAcademica: experienciaAcademica.data,
+        experienciaProfissionais: experienciaProfissional.data
       })
-      const portfolio = await api.get('/portfolio')
+      const portfolio = await api.get(`/portfolio`)
       setPortfolio(portfolio.data)
 
     }catch (error) {
@@ -46,7 +50,8 @@ function App() {
   React.useEffect(() => {
     fetchDados()
   }, [])
-
+// console.log(informacoes)
+// console.log(curriculo)
   return (
       <>
         <Header informacoes={informacoes}></Header>
@@ -54,8 +59,8 @@ function App() {
           <BarraDeNavegacao></BarraDeNavegacao>
           <Routes>
             <Route index element={<Curriculo curriculo={curriculo} />} />
-            <Route path="Portfolio" element={<Portfolio portfolio={portfolio} />} />
-            <Route path="Contato" element={<Contato />} />
+            <Route path="portfolio" element={<Portfolio portfolio={portfolio} />} />
+            <Route path="contato" element={<Contato />} />
           </Routes>
         </BrowserRouter>
 

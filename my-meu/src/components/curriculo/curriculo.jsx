@@ -1,38 +1,46 @@
-import "../curriculo/curriculo.css"
-import date from "./curriculo.json"
-
-
+import  "../curriculo/curriculo.css"
 
 function Curriculo(props) {
 
- const {resumo, experienciaAcademica, experienciasProfissionais} = props.curriculo
+ const {resumo, experienciaAcademica, experienciaProfissional} = props.curriculo
 
-if(!resumo || !experienciaAcademica || !experienciasProfissionais) {
-    return <p>Carregando...</p>
+ if(!resumo || !experienciaAcademica || !experienciaProfissional) {
+     return <p>Carregando...</p>
 }
     return (
         <>
             <section className="secao2">
+
                 <h2>Resumo</h2>
-                <p>{date.resumo}</p>
+                <p>{resumo}</p>
 
             </section>
             <section className="secao3">
-                <h4>objetivo</h4>
+                <h4>Acadêmico</h4>
+                <ul>
 
-
-                <p >
-                    <b>{date.objetivo.titulo}</b> {date.objetivo[0].sonho}
-                </p>
-
+               {experienciaAcademica.map((item,index) => (
+                   <li key={index}>
+                   
+                    <b>({item.anoInicio}  - {item,anoFim})</b> {item.titulo};
+                
+                   </li>
+               ))}
+               </ul>
 
             </section>
             <section className="secao4">
 
-                <h5>Epectativa do curso</h5>
-                <p>
-                    finalizar esse curso, e poder tentar a carreira como programador!
-                </p>
+                <h5>Profissional</h5>
+                <ul>
+                    {experienciaProfissional.map((item,index) => (
+
+                        <li key={index}>
+
+                            <b>({item.anoInicio}  - {item.anoFim})</b> {item.titulo};
+                        </li>
+                    ))}
+                </ul>
             </section>
         </>
     )
