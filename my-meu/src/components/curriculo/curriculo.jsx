@@ -2,17 +2,18 @@ import  "../curriculo/curriculo.css"
 
 function Curriculo(props) {
 
- const {resumo, experienciaAcademica, experienciaProfissional} = props.curriculo
+const {resumo,experienciaAcademica,experienciaProfissionais} = props.curriculo
 
- if(!resumo || !experienciaAcademica || !experienciaProfissional) {
+ if(!resumo || !experienciaAcademica || !experienciaProfissionais) {
      return <p>Carregando...</p>
 }
     return (
         <>
             <section className="secao2">
-
-                <h2>Resumo</h2>
+                    
+                    <h2>Resumo</h2>
                 <p>{resumo}</p>
+                
 
             </section>
             <section className="secao3">
@@ -22,7 +23,7 @@ function Curriculo(props) {
                {experienciaAcademica.map((item,index) => (
                    <li key={index}>
                    
-                    <b>({item.anoInicio}  - {item,anoFim})</b> {item.titulo};
+                    <b>({item.anoInicio}  - {item.anoFim})</b> {item.titulo};
                 
                    </li>
                ))}
@@ -33,7 +34,7 @@ function Curriculo(props) {
 
                 <h5>Profissional</h5>
                 <ul>
-                    {experienciaProfissional.map((item,index) => (
+                    {experienciaProfissionais.map((item,index) => (
 
                         <li key={index}>
 

@@ -20,8 +20,8 @@ function App() {
   const [informacoes, setInformacoes] = React.useState({});
   const [curriculo, setCurriculo] = React.useState({});
   const [portfolio, setPortfolio] = React.useState([]);
-console.log(informacoes)
-  console.log(curriculo)
+
+   console.log(curriculo)
   const fetchDados = async () => {
     try {
       const informacao = await api.get(`/informacoes/1`);
@@ -32,12 +32,12 @@ console.log(informacoes)
       })
 
       const experienciaAcademica = await api.get(`/experiencias?tipo=academico`)
-      const experienciaProfissional = await api.get(`/experiencias?tipo=profissional`)
+      const experienciaProfissionais = await api.get(`/experiencias?tipo=profissional`)
 
       setCurriculo({
         resumo: informacao.data.resumo,
         experienciaAcademica: experienciaAcademica.data,
-        experienciaProfissionais: experienciaProfissional.data
+        experienciaProfissionais: experienciaProfissionais.data
       })
       const portfolio = await api.get(`/portfolio`)
       setPortfolio(portfolio.data)
