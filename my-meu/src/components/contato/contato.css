@@ -1,0 +1,71 @@
+#secao{  
+    height: 600px;
+
+}
+
+#input-name{
+    width: 300px;
+    outline: none;
+    padding: 10px 0 10px 0;
+}
+#input-email{
+    text-align: left;
+    width: 300px;
+    outline: none;
+    padding: 10px 0 10px 0;
+}
+#celular{
+   width: 300px;
+   outline: none;
+   padding: 10px 0 10px 0;
+}
+fieldset {
+    width: 300px;
+    color: rgba(56,60,78,1);
+    border: none;
+}
+#input-msg{
+    padding: 0 33px;
+}
+#form{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #6e6c88;
+    border-radius: 5%;
+    width: 350px;
+    margin-top: 100px;
+    border: none;
+}
+label{
+    text-align: left;
+    gap: 50px;
+}
+#btn{
+    padding: 10px 50px;
+    background: linear-gradient(90deg, rgba(11,33,101,1) 0%, rgba(27,41,93,1) 23%, rgba(56,60,78,1) 100%);
+    cursor: pointer;
+    transition: 1s;
+    border: solid 0,5px;
+    border-radius: 30px;
+    margin: 13px 0 30px;
+    text-align: center;
+
+}
+#btn:hover{
+    background: #6e6c88;
+    
+}.spans-required{
+    color: red;
+    display: none;
+    font-size: 15px;
+    margin: 3px 0 0 2px;
+   
+}
+h5{
+    font-size: 30px;
+    color: #262435;
+}
